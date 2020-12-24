@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 1, 2014 9:41:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.marta.admin.hibernate.Revenue_Report_IS" table="REVENUE_REPORT_IS">
+        <id name="orderid" type="java.lang.String">
+            <column name="ORDERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="addressid" type="java.lang.String">
+            <column name="ADDRESSID" />
+        </property>
+        <property name="price" type="java.lang.String">
+            <column name="PRICE" />
+        </property>
+        <property name="priceofbreezecard" type="java.lang.String">
+            <column name="PRICEOFBREEZECARD" />
+        </property>
+        <property name="ordertype" type="java.lang.String">
+            <column name="ORDERTYPE" />
+        </property>
+        <property name="approvalcode" type="java.lang.String">
+            <column name="APPROVALCODE" />
+        </property>
+        <property name="creditcardnumber" type="java.lang.String">
+            <column name="CREDITCARDNUMBER" />
+        </property>
+        <property name="cardtype" type="java.lang.String">
+            <column name="CARDTYPE" />
+        </property>
+        <property name="cashvalue" type="java.lang.String">
+            <column name="CASHVALUE" />
+        </property>
+        <property name="transactiondate" type="java.util.Date">
+            <column name="TRANSACTIONDATE" />
+        </property>
+        <property name="shippingamount" type="java.lang.String">
+            <column name="SHIPPINGAMOUNT" />
+        </property>
+        <property name="products" type="java.lang.String">
+            <column name="PRODUCTS" />
+        </property>
+         <property name="ordervalue" type="java.lang.String">
+            <column name="ORDERVALUE" />
+        </property>
+    </class>
+</hibernate-mapping>

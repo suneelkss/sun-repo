@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 2, 2014 7:00:01 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.marta.admin.hibernate.BcwtsPartnerIssue" table="BCWTSPARTNERISSUE">
+        <id name="bcwtspartnerissueid" type="java.lang.Long">
+            <column name="BCWTSPARTNERISSUEID" />
+             <generator class="sequence" >
+    	        <param name="sequence">BCWTSPARTNERISSUEID</param>      
+            </generator> 
+        </id>
+        <property name="issuedescription" type="java.lang.String">
+            <column name="ISSUEDESCRIPTION" />
+        </property>
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        <property name="issuestatus" type="java.lang.String">
+            <column name="ISSUESTATUS" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="CREATEDBYEMAIL" />
+        </property>
+        <property name="creationdate" type="java.util.Date">
+            <column name="CREATIONDATE" />
+        </property>
+        <property name="closedate" type="java.util.Date">
+            <column name="CLOSEDATE" />
+        </property>
+        <property name="tmaname" type="java.lang.String">
+            <column name="TMANAME" />
+        </property>
+        <property name="companyname" type="java.lang.String">
+            <column name="COMPANYNAME" />
+        </property>
+        <property name="serialnumber" type="java.lang.String">
+            <column name="SERIALNUMBER" />
+        </property>
+        <property name="memberid" type="java.lang.String">
+            <column name="MEMBERID" />
+        </property>
+        <property name="createdby" type="java.lang.String">
+            <column name="CREATEDBY" />
+        </property>
+        <property name="resolution" type="java.lang.String">
+            <column name="RESOLUTION" />
+        </property>
+         <property name="region" type="java.lang.String">
+            <column name="REGION" />
+        </property>
+        <many-to-one name="adminid" class="com.marta.admin.hibernate.BcwtPatron" fetch="join">
+            <column name="ADMINID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

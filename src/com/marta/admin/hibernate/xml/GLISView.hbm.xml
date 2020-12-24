@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2014 9:45:54 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.marta.admin.hibernate.GLISView" table="GL_IS_VIEW_NEW">
+        <id name="orderid" type="java.lang.String">
+            <column name="ORDERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="productname" type="java.lang.String">
+            <column name="PRODUCTNAME" />
+        </property>
+        <property name="accountnumber" type="java.lang.String">
+            <column name="ACCOUNT_NUM" />
+        </property>
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="ordertype" type="java.lang.String">
+            <column name="ORDERTYPE" />
+        </property>
+        <property name="approvalcode" type="java.lang.String">
+            <column name="APPROVALCODE" />
+        </property>
+        <property name="price" type="java.lang.String">
+            <column name="PRICE" />
+        </property>
+        <property name="cashvalue" type="java.lang.String">
+            <column name="CASHVALUE" />
+        </property>
+         <property name="shippingamount" type="java.lang.String">
+            <column name="SHIPPINGAMOUNT" />
+        </property>
+          <property name="patronaddressid" type="java.lang.String">
+            <column name="ADDRESSID" />
+        </property>
+        <property name="priceofbreezecard" type="java.lang.String">
+            <column name="PRICEOFBREEZECARD" />
+        </property>
+        <property name="transactiondate" type="java.util.Date">
+            <column name="TRANSACTIONDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

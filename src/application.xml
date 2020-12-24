@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN" "http://java.sun.com/dtd/application_1_3.dtd"> 
+<application id="MARTAGBS"> 
+	<display-name>MARTA Brees Card  ( GBS )Web Ticketing System</display-name>
+		<module id="MARTA_WEB_GBS">
+			<web>				
+		      <web-uri>@war-file@</web-uri>
+		      <context-root>/@url-name@</context-root>   			
+			</web>
+		</module>		
+</application> 
+
